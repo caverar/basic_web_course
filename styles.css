@@ -1,0 +1,142 @@
+/* Carga de tipografía .ttf alusiva a Señor de los anillos con licencia de uso personal gratuito */
+@font-face{
+    font-family: LoTRFont; 
+    src: url('aniron-font/Aniron-7BaP.ttf');
+}
+@font-face{ 
+    font-family: LoTRFont; 
+    font-weight: bold; 
+    src: url('aniron-font/AnironBold-mL9P.ttf');
+}
+
+/* Estilos generales para todo el contenido de la pagina*/
+*{
+    font-family: LoTRFont;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general para todo el contenido de body*/
+body{
+    margin: 5%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2%;
+    color: white;
+    width: 1000px;
+    height: 150vh;
+}
+
+/* Estilo para la cabecera de menu de navegación*/
+header{
+    border: 5%;
+}
+.nav-menu{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(8, 8, 91, 0.567);
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+
+}
+/* Estilo para los botones del menu de navegación*/
+.nav-button{
+    color: white;
+    font-size: small;
+    text-decoration: none;    
+    float: left;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-button-selected{
+    background-color: black;
+}
+
+.nav-button:hover{
+    background-color: rgba(0, 0, 0, 0.624);
+    border-radius: 10px;
+    font-size: large;
+    padding: 5px;
+}
+main{
+    height: 70%;
+    overflow-y: scroll;
+    overscroll-behavior-y: inherit;
+
+}
+
+h1{
+    background-color: rgba(39, 44, 65, 0.56);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.text{
+    background-color: rgba(41, 55, 110, 0.712);
+    font-size: small;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.in-text-image{
+    width: 700px;
+    width: 70%;
+    border:10px;
+    border-radius: 10px;
+
+    /*Centrado de la imagen*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video{
+    /*Centrado del video*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    font-size: x-small;
+    color: white;
+}
+
+.footer-content{
+    background-color: rgba(41, 55, 110, 0.712);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.email-color{
+    color: white;
+}
+
+/*Lineas horizontales blancas*/
+hr{
+    color: white;
+}
+
+/*Hipervínculos de color blanco para evitar color azul que no se distingue en el fondo*/
+a{
+    color: white;
+}
+
+/*Tabulación de listas*/
+ul{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+/*Margenes para tablas*/
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
