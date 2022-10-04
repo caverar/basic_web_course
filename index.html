@@ -1,57 +1,58 @@
-
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <!--Titulo de la pagina-->
-        <title>Minas Tirith</title>
-        <!-- Asignación de archivo de estilos-->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Asignación de icono de titulo de pagina-->
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head> 
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--Titulo de la pagina-->
+    <title>Minas Tirith</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Asignación de archivo de estilos-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
-    <body>
+    <!-- Asignación de icono de titulo de pagina-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class = "wrapper">
         <header> <!--Cabecera con el menu de navegación-->
-            <nav class = "nav-menu">
-                <!--Pestaña actual indicada mediante otra clase css-->
-                <a class = "nav-button nav-button-selected" href="index.html">Inicio</a> 
-                <a class = "nav-button" href="location.html">Lugar</a> 
-                <a class = "nav-button" href="characters.html">Personajes</a> 
-                <a class = "nav-button" href="traditions.html">Tradiciones</a>
-                <a class = "nav-button" href="history.html">Historia</a>
-                <a class = "nav-button" href="references.html">Referencias</a>
-            </nav>
+
+            <label for="toggle-hamburger" class="hamburger">
+                <img src="images/ham-icon.svg" class="ham-icon">
+            </label>
+            <input type="checkbox" id="toggle-hamburger" class = "toggle-hamburger">
+            <div class="sm_title">Inicio</div>
+            
+            <a href="index.html" class="title">Minas Tirith</a>
+            <hr>
+            <div class="navigator">
+                <ul class = "nav-menu">
+                    <!--Pestaña actual indicada mediante otra clase css-->
+                    <li> <a class = "nav-tab nav-tab-selected" href="index.html">Inicio</a> </li>
+                    <li> <a class = "nav-tab" href="location.html">Lugar</a> </li>
+                    <li> <a class = "nav-tab" href="characters.html">Personajes</a> </li>
+                    <li> <a class = "nav-tab" href="traditions.html">Tradiciones</a> </li>
+                    <li> <a class = "nav-tab" href="history.html">Historia</a> </li>
+                    <li> <a class = "nav-tab" href="references.html">Referencias</a> </li>
+                </ul>
+            </div>
+            
         </header>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
-        <main><!--Contenido de la pestaña seleccionada en el menu-->
-            <h1>Minas Tirith</h1>
-            <br>
-            <div class="text">
-                Minas Tirith es la capital del reino de Gondor dentro del universo de fantasia del aclamado
-                autor británico J.R.R. Tolkien. Es una ciudad fortaleza que reposa sobre una montaña lo 
-                cual la convierte en la fortaleza perfecta para resistir un largo asedio.<br>
-            </div>
-            <br>
-            <img src="images/index.jpg" alt="Minas Tirith" class="in-text-image"> 
-            <br>
+
+        <main>
+            Proident cillum occaecat laboris labore laborum laborum irure ipsum dolor cupidatat velit incididunt anim. Consectetur exercitation culpa ea sint incididunt amet pariatur culpa sint incididunt consequat ipsum irure aliqua. Mollit ea proident mollit amet proident voluptate excepteur quis mollit voluptate. Veniam fugiat consequat officia deserunt culpa ullamco elit dolore est laborum ipsum. Quis veniam proident est sunt irure occaecat dolor nisi minim aliqua eiusmod. Non dolor id pariatur cupidatat dolor nulla sit aute velit nostrud laborum irure officia.<br>
+            Minim fugiat proident quis ut esse. Commodo velit veniam sint ad nisi anim. Duis veniam tempor commodo reprehenderit mollit. Voluptate sint tempor exercitation laboris consectetur anim sunt anim exercitation officia duis consequat et.<br>
+            Labore adipisicing labore qui cupidatat in ut commodo do sint do sint est. Culpa reprehenderit ipsum et anim pariatur incididunt. Eu ullamco esse aute nulla Lorem pariatur ullamco sint. Irure commodo enim non et proident reprehenderit sunt amet dolor sunt irure qui ad. Proident velit aliqua aliqua amet qui qui qui excepteur. Qui laboris excepteur consectetur eu Lorem et quis sunt non.<br>
         </main>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
-
+        
+        
         <footer><!--Pie de pagina con lo datos del autor-->
-            <h1>Autor:</h1>
-            <br>
-            <div class ="footer-content">
-                Camilo Andres Vera Ruiz <br>
-                <a class= "email-color" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
+            <div>
+                Autor: Camilo Andres Vera Ruiz <br>
+                <a class = "hyperlinks" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--Titulo de la pagina-->
+    <title>Minas Tirith</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Asignación de archivo de estilos-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- Asignación de icono de titulo de pagina-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class = "wrapper"> 
+        <header> <!--Cabecera con el menu de navegación-->
+
+            <a href="index.html" class="title">Minas Tirith</a>
+
+            <ul class = "nav-menu">
+                <!--Pestaña actual indicada mediante otra clase css-->
+                <li> <a class = "nav-tab nav-tab-selected" href="index.html">Inicio</a> </li>
+                <li> <a class = "nav-tab" href="location.html">Lugar</a> </li>
+                <li> <a class = "nav-tab" href="characters.html">Personajes</a> </li>
+                <li> <a class = "nav-tab" href="traditions.html">Tradiciones</a> </li>
+                <li> <a class = "nav-tab" href="history.html">Historia</a> </li>
+                <li> <a class = "nav-tab" href="references.html">Referencias</a> </li>
+
+            </ul>
+        </header>
+
+
+
+
+        <main>
+            Proident cillum occaecat laboris labore laborum laborum irure ipsum dolor cupidatat velit incididunt anim. Consectetur exercitation culpa ea sint incididunt amet pariatur culpa sint incididunt consequat ipsum irure aliqua. Mollit ea proident mollit amet proident voluptate excepteur quis mollit voluptate. Veniam fugiat consequat officia deserunt culpa ullamco elit dolore est laborum ipsum. Quis veniam proident est sunt irure occaecat dolor nisi minim aliqua eiusmod. Non dolor id pariatur cupidatat dolor nulla sit aute velit nostrud laborum irure officia.<br>
+            Minim fugiat proident quis ut esse. Commodo velit veniam sint ad nisi anim. Duis veniam tempor commodo reprehenderit mollit. Voluptate sint tempor exercitation laboris consectetur anim sunt anim exercitation officia duis consequat et.<br>
+            Labore adipisicing labore qui cupidatat in ut commodo do sint do sint est. Culpa reprehenderit ipsum et anim pariatur incididunt. Eu ullamco esse aute nulla Lorem pariatur ullamco sint. Irure commodo enim non et proident reprehenderit sunt amet dolor sunt irure qui ad. Proident velit aliqua aliqua amet qui qui qui excepteur. Qui laboris excepteur consectetur eu Lorem et quis sunt non.<br>
+        </main>
+
+        
+        
+        <footer><!--Pie de pagina con lo datos del autor-->
+            <div>
+                Autor: Camilo Andres Vera Ruiz <br>
+                <a href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
+            </div>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

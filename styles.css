@@ -62,6 +62,7 @@ header{
     font-size: large;
     padding: 5px;
 }
+
 main{
     height: 70%;
     overflow-y: scroll;
