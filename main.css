@@ -160,7 +160,7 @@ main{
     min-height: 60%;
     margin: 0;
     border: 0; 
-    padding: 5em;
+    padding: 3em 5em;
     top: 25%;
     bottom: 15%;
     position:fixed;
@@ -176,6 +176,62 @@ main{
 
     color: white;
 }
+
+/* Estilo de las imágenes integradas en el contenido*/
+.in-text-image{
+    width: 70%;
+    border: 10px;
+    border-radius: 10px;
+
+    /*Centrado de la imagen*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Estilo para las cajas de texto*/
+.text{
+    background-color: rgba(41, 55, 110, 0.712);
+    border-radius: 10px;
+    padding: 20px;
+}
+/*Estilo para video de YouTube*/
+.video-container{
+    margin: 0% 5%;
+
+    width: 90%;
+
+    height: 0;
+    padding-bottom: 50.62%;
+    position: relative;
+}
+.video{
+    /*Centrado del video*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* Estilo para los títulos*/
+h1{
+    color: rgb(255, 242, 0);
+}
+h2{
+    color: rgb(255, 242, 0);
+}
+/* Estilo para los hipervínculos en todo en toda la pagina. */
+.hyperlinks{
+    color: rgb(255, 242, 0);
+}
+/* Estilo para los hipervínculos internos. */
+.internal-links{
+    color: white;
+}
+/*Estilos de tablas. */
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
 /*
 ================================================================
                             Pie de pagina
@@ -208,15 +264,10 @@ footer > div{
     min-height: 70%;
     padding: 0.5em;
 
-
     color:white;
     border-color: white;
     border-width: 0.1em;
     border-style: solid;
-}
-/* Estilo para los hipervínculos en todo en toda la pagina. */
-.hyperlinks{
-    color: rgb(255, 242, 0);
 }
 
 /*
@@ -229,7 +280,7 @@ footer > div{
     /*Esconder el titulo y la linea separadora*/
     .title{
         display: none;
-    }
+    }    
     header > hr{
         display: none;
     }
@@ -243,6 +294,10 @@ footer > div{
         max-height: 72%;
         max-height: 72%;
     }
+    video{
+        width:50%; 
+        height: auto;
+    }
 }
 /*
 ================================================================
@@ -250,11 +305,19 @@ footer > div{
 ================================================================
 */
 @media only screen and (max-width: 640px){
-    
+
+    /* Estilo para las cajas de texto*/
+    .text{
+        line-height: 3rem;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: none;
+        padding: 2px;
+    }
+    /* Reajuste de margenes internos*/
     header, main, footer{
         padding: 1em 1.5em;
     }
-
+    /* Reajuste de tamaño de cabecera, contenido y pie de pagina*/
     header{
         max-height: 10%;
         min-height: 10%;
@@ -277,7 +340,6 @@ footer > div{
         display: none;
     }
 
-
     /* Ajustar los nuevos elementos de la cabecera. */ 
     header{
         display: flex;
@@ -285,6 +347,8 @@ footer > div{
         overflow: visible;
 
     }
+
+    /* Mostrar el menu desplegable. */ 
     .hamburger{
         display: block;
     }
@@ -296,9 +360,8 @@ footer > div{
         opacity: 1
     }
 
-
+    /* Mostrar el titulo de la pestaña. */
     .sm_title{
-        /* padding: 0.1em 0.1em; */
         display: block;
         margin: auto;
         min-width: 30%;
@@ -313,7 +376,6 @@ footer > div{
     }
 
     /* Configuración del menu de hamburguesa. */
-
     .navigator{
         height: 300vh;
         width:  220px;

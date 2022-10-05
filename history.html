@@ -1,37 +1,45 @@
-
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <!--Titulo de la pagina-->
-        <title>Minas Tirith</title>
-        <!-- Asignación de archivo de estilos-->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Asignación de icono de titulo de pagina-->
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head> 
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--Titulo de la pagina-->
+    <title>Minas Tirith</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Asignación de archivo de estilos-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
-    <body>
+    <!-- Asignación de icono de titulo de pagina-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class = "wrapper">
         <header> <!--Cabecera con el menu de navegación-->
-            <nav class = "nav-menu">
-                <a class = "nav-button" href="index.html">Inicio</a> 
-                <a class = "nav-button" href="location.html">Lugar</a> 
-                <a class = "nav-button" href="characters.html">Personajes</a> 
-                <a class = "nav-button" href="traditions.html">Tradiciones</a>
-                <!--Pestaña actual indicada mediante otra clase css-->
-                <a class = "nav-button nav-button-selected" href="history.html">Historia</a>
-                <a class = "nav-button" href="references.html">Referencias</a>
-            </nav>
+
+            <label for="toggle-hamburger" class="hamburger">
+                <img src="images/ham-icon.svg" class="ham-icon">
+            </label>
+            <input type="checkbox" id="toggle-hamburger" class = "toggle-hamburger">
+            <div class="sm_title">Historia</div>
+            
+            <a href="index.html" class="title">Minas Tirith</a>
+            <hr>
+            <div class="navigator">
+                <ul class = "nav-menu">
+                    <!--Pestaña actual indicada mediante otra clase css-->
+                    <li> <a class = "nav-tab" href="index.html">Inicio</a> </li>
+                    <li> <a class = "nav-tab" href="location.html">Lugar</a> </li>
+                    <li> <a class = "nav-tab" href="characters.html">Personajes</a> </li>
+                    <li> <a class = "nav-tab" href="traditions.html">Tradiciones</a> </li>
+                    <li> <a class = "nav-tab nav-tab-selected" href="history.html">Historia</a> </li>
+                    <li> <a class = "nav-tab" href="references.html">Referencias</a> </li>
+                </ul>
+            </div>
+            
         </header>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
 
         <main><!--Contenido de la pestaña seleccionada en el menu-->
-            <h1>Historia</h1>
-            <br>
             <img src="images/historia.jpg" alt="Historia" class="in-text-image"> 
             <br>
             <div class="text">
@@ -81,10 +89,12 @@
                 La batalla de los Campos de Pelennor puede ser estudiada con mas detalle en el siguiente video.<br>
                 <br>
                 <!--Integración de video de YouTube respetando la sintaxis que requiere YouTube-->
-                <iframe class="video" width="840" height="472" src="https://www.youtube-nocookie.com/embed/h7gyfoLt4U8" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><br>
-
+                <div class="video-container">
+                    <iframe class="video" width=80% height=80vw/1.77 src="https://www.youtube-nocookie.com/embed/h7gyfoLt4U8" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br>
+                </div>
+                <br>
                 Después de la destrucción del Anillo, el rey Elessar encontró un último vástago del Árbol Blanco en las montañas y así
                 pudo retirarse el Árbol Muerto en el Patio del Árbol. Por otra parte, los Enanos de Aglarond, bajo las órdenes de Gimli,
                 reconstruyeron la Gran Puerta. Minas Tirith siguió siendo capital de Gondor durante la Cuarta Edad.<br>
@@ -93,7 +103,7 @@
             <div class="text">
                 La historia de Minas Tirith es muy extensa, si desea consultar mas información por favor visite este 
                 <!--Se configura el hipervínculo para abrir una nueva pestaña con el fin de permanecer en el sitio-->
-                <a href= "https://es.frwiki.wiki/wiki/Minas_Tirith" target="_blank">sitio</a>
+                <a href "https://es.frwiki.wiki/wiki/Minas_Tirith" class = "hyperlinks" target="_blank">sitio</a>
                 <br>
             </div>
 
@@ -101,18 +111,14 @@
             <br>
         </main>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
-
+        
+        
         <footer><!--Pie de pagina con lo datos del autor-->
-            <h1>Autor:</h1>
-            <br>
-            <div class ="footer-content">
-                Camilo Andres Vera Ruiz <br>
-                <a class= "email-color" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
+            <div>
+                Autor: Camilo Andres Vera Ruiz <br>
+                <a class = "hyperlinks" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
             </div>
-
         </footer>
-    </body>
+    </div>
+</body>
 </html>

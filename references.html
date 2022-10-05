@@ -1,85 +1,94 @@
-
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <!--Titulo de la pagina-->
-        <title>Minas Tirith</title>
-        <!-- Asignación de archivo de estilos-->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Asignación de icono de titulo de pagina-->
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    </head> 
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--Titulo de la pagina-->
+    <title>Minas Tirith</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Asignación de archivo de estilos-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
-    <body>
+    <!-- Asignación de icono de titulo de pagina-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class = "wrapper">
         <header> <!--Cabecera con el menu de navegación-->
-            <nav class = "nav-menu">
-                <a class = "nav-button" href="index.html">Inicio</a> 
-                <a class = "nav-button" href="location.html">Lugar</a> 
-                <a class = "nav-button" href="characters.html">Personajes</a> 
-                <a class = "nav-button" href="traditions.html">Tradiciones</a>
-                <a class = "nav-button" href="history.html">Historia</a>
-                <!--Pestaña actual indicada mediante otra clase css-->
-                <a class = "nav-button nav-button-selected" href="references.html">Referencias</a>
-            </nav>
+
+            <label for="toggle-hamburger" class="hamburger">
+                <img src="images/ham-icon.svg" class="ham-icon">
+            </label>
+            <input type="checkbox" id="toggle-hamburger" class = "toggle-hamburger">
+            <div class="sm_title">Referencias</div>
+            
+            <a href="index.html" class="title">Minas Tirith</a>
+            <hr>
+            <div class="navigator">
+                <ul class = "nav-menu">
+                    <!--Pestaña actual indicada mediante otra clase css-->
+                    <li> <a class = "nav-tab" href="index.html">Inicio</a> </li>
+                    <li> <a class = "nav-tab" href="location.html">Lugar</a> </li>
+                    <li> <a class = "nav-tab" href="characters.html">Personajes</a> </li>
+                    <li> <a class = "nav-tab" href="traditions.html">Tradiciones</a> </li>
+                    <li> <a class = "nav-tab" href="history.html">Historia</a> </li>
+                    <li> <a class = "nav-tab nav-tab-selected" href="references.html">Referencias</a> </li>
+                </ul>
+            </div>
+            
         </header>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
 
         <main><!--Contenido de la pestaña seleccionada en el menu-->
-            <h1>Referencias</h1>
-            <br>
-
+            <h1>Mapa de navegación</h1>
             <div class="text">
-                <h2>Imagenes</h2>
-                <table>
+                <img src="images/mapa.svg" alt="Mapa de navegación" class="in-text-image">
+            </div>
+
+            <h1>Referencias Imágenes</h1>
+            <div class="text">
+                <table class = "references-table">
                     <tr><th>Imagen</th> <th>Autor</th> <th>Enlace</th></tr>
-                    <tr><th>aragorn.jpg</th> <th>Peter Jackson</th> <th><a href="https://www.youtube.com/watch?v=E1exdvDK3K0" target="_blank"> Link</a></th></tr>
-                    <tr><th>arda.webp</th> <th>LOTR wiki</th> <th><a href="https://static.wikia.nocookie.net/eldragonverde/images/7/78/Arda_tercera_edad.png/revision/latest?cb=20120511170720&path-prefix=es" target="_blank"> Link</a></th></tr>
-                    <tr><th>background.jpg</th> <th>Peter Jackson</th> <th><a href="https://www.youtube.com/watch?v=E1exdvDK3K0" target="_blank"> Link</a></th></tr>
-                    <tr><th>buldings.jpg</th> <th>Shifting Lands</th> <th><a href="https://twitter.com/geboomtweets/status/761491249345990656?lang=gl" target="_blank"> Link</a></th></tr>
-                    <tr><th>campos.jpg</th> <th>Lina Willow</th> <th><a href="https://www.linawillow.org/home/wp-content/uploads/2015/10/minas-tirith-map-05.jpg" target="_blank"> Link</a></th></tr>
-                    <tr><th>denethor.jpg</th> <th>Peter Jackson</th> <th><a href="http://malvadito.blogspot.com/2015/08/denethor-ii.html" target="_blank"> Link</a></th></tr>
-                    <tr><th>faramir.webp</th> <th>Peter Jackson</th> <th><a href="https://lotr.fandom.com/wiki/Faramir" target="_blank"> Link</a></th></tr>
-                    <tr><th>historia.jpg</th> <th>Eöl Vardamir</th> <th><a href="https://www.youtube.com/watch?v=fN37fZb3kLQ" target="_blank"> Link</a></th></tr>
-                    <tr><th>index.jpg</th> <th>Gordon Kuznetsov</th> <th><a href="https://co.pinterest.com/pin/743586588452282137/" target="_blank"> Link</a></th></tr>
-                    <tr><th>map.jpg</th> <th>Lina Willow</th> <th><a href="https://www.linawillow.org/home/wp-content/uploads/2015/10/minas-tirith-map-05.jpg" target="_blank"> Link</a></th></tr>
-                    <tr><th>plane.jpg</th> <th>Wikipedia</th> <th><a href="https://es.wikipedia.org/wiki/Minas_Tirith" target="_blank"> Link</a></th></tr>
+                    <tr><th>aragorn.jpg</th> <th>Peter Jackson</th> <th><a class = "hyperlinks" href="https://www.youtube.com/watch?v=E1exdvDK3K0" target="_blank"> Link</a></th></tr>
+                    <tr><th>arda.webp</th> <th>LOTR wiki</th> <th><a class = "hyperlinks" href="https://static.wikia.nocookie.net/eldragonverde/images/7/78/Arda_tercera_edad.png/revision/latest?cb=20120511170720&path-prefix=es" target="_blank"> Link</a></th></tr>
+                    <tr><th>background.jpg</th> <th>Peter Jackson</th> <th><a class = "hyperlinks" href="https://www.youtube.com/watch?v=E1exdvDK3K0" target="_blank"> Link</a></th></tr>
+                    <tr><th>buldings.jpg</th> <th>Shifting Lands</th> <th><a class = "hyperlinks" href="https://twitter.com/geboomtweets/status/761491249345990656?lang=gl" target="_blank"> Link</a></th></tr>
+                    <tr><th>campos.jpg</th> <th>Lina Willow</th> <th><a class = "hyperlinks" href="https://www.linawillow.org/home/wp-content/uploads/2015/10/minas-tirith-map-05.jpg" target="_blank"> Link</a></th></tr>
+                    <tr><th>denethor.jpg</th> <th>Peter Jackson</th> <th><a class = "hyperlinks" href="http://malvadito.blogspot.com/2015/08/denethor-ii.html" target="_blank"> Link</a></th></tr>
+                    <tr><th>faramir.webp</th> <th>Peter Jackson</th> <th><a class = "hyperlinks" href="https://lotr.fandom.com/wiki/Faramir" target="_blank"> Link</a></th></tr>
+                    <tr><th>historia.jpg</th> <th>Eöl Vardamir</th> <th><a class = "hyperlinks" href="https://www.youtube.com/watch?v=fN37fZb3kLQ" target="_blank"> Link</a></th></tr>
+                    <tr><th>index.jpg</th> <th>Gordon Kuznetsov</th> <th><a class = "hyperlinks" href="https://co.pinterest.com/pin/743586588452282137/" target="_blank"> Link</a></th></tr>
+                    <tr><th>map.jpg</th> <th>Lina Willow</th> <th><a class = "hyperlinks" href="https://www.linawillow.org/home/wp-content/uploads/2015/10/minas-tirith-map-05.jpg" target="_blank"> Link</a></th></tr>
+                    <tr><th>plane.jpg</th> <th>Wikipedia</th> <th><a class = "hyperlinks" href="https://es.wikipedia.org/wiki/Minas_Tirith" target="_blank"> Link</a></th></tr>
+                    <tr><th>title.jpg</th> <th>wallpaper.dog</th> <th><a class = "hyperlinks" href="https://wallpaper.dog/lord-of-the-rings" target="_blank"> Link</a></th></tr>
 
                 </table>
             </div>
             <br>
+            <h1>Referencias Contenidos</h1>
             <div class="text">
-                <h2>Contenidos</h2>
-                <table>
+                <table class = "references-table">
                     <tr><th>Autor</th> <th>Enlace</th></tr>
-                    <tr><th>LOTR wiki</th> <th><a href="https://esdla.fandom.com/wiki/Minas_Tirith"> Link</a></th></tr>
-                    <tr><th>Wikipedia</th> <th><a href="https://es.wikipedia.org/wiki/Monta%C3%B1as_Blancas"> Link</a></th></tr>
-                    <tr><th>LOTR wiki</th> <th><a href="https://esdla.fandom.com/wiki/Arda"> Link</a></th></tr>
-                    <tr><th>Ruslan unhicch</th> <th><a href="https://www.ecured.cu/Minas_Tirith"> Link</a></th></tr>
-                    <tr><th>LOTR wiki</th> <th><a href="https://esdla.fandom.com/wiki/Aragorn_II"> Link</a></th></tr>
-                    <tr><th>LOTR wiki</th> <th><a href="https://esdla.fandom.com/wiki/Faramir"> Link</a></th></tr>
-                    <tr><th>LOTR wiki</th> <th><a href="https://esdla.fandom.com/wiki/Denethor_II"> Link</a></th></tr>
+                    <tr><th>LOTR wiki</th> <th><a  class = "hyperlinks"href="https://esdla.fandom.com/wiki/Minas_Tirith"> Link</a></th></tr>
+                    <tr><th>Wikipedia</th> <th><a  class = "hyperlinks"href="https://es.wikipedia.org/wiki/Monta%C3%B1as_Blancas"> Link</a></th></tr>
+                    <tr><th>LOTR wiki</th> <th><a  class = "hyperlinks"href="https://esdla.fandom.com/wiki/Arda"> Link</a></th></tr>
+                    <tr><th>Ruslan unhicch</th> <th><a  class = "hyperlinks" href="https://www.ecured.cu/Minas_Tirith"> Link</a></th></tr>
+                    <tr><th>LOTR wiki</th> <th><a  class = "hyperlinks" href="https://esdla.fandom.com/wiki/Aragorn_II"> Link</a></th></tr>
+                    <tr><th>LOTR wiki</th> <th><a  class = "hyperlinks" href="https://esdla.fandom.com/wiki/Faramir"> Link</a></th></tr>
+                    <tr><th>LOTR wiki</th> <th><a  class = "hyperlinks" href="https://esdla.fandom.com/wiki/Denethor_II"> Link</a></th></tr>
                 </table>
 
             </div>
-
         </main>
 
-        <br><!--Linea horizontal separadora-->
-        <hr>
-        <br>
-
+        
+        
         <footer><!--Pie de pagina con lo datos del autor-->
-            <h1>Autor:</h1>
-            <br>
-            <div class ="footer-content">
-                Camilo Andres Vera Ruiz <br>
-                <a class= "email-color" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
+            <div>
+                Autor: Camilo Andres Vera Ruiz <br>
+                <a class = "hyperlinks" href="mailto: caverar@unal.edu.co">caverar@unal.edu.co</a>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
