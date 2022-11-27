@@ -27,8 +27,8 @@
       <div class="navigator">
         <ul class = "nav-menu">
           <!--Pestaña actual indicada mediante otra clase css-->
-          <li> <a class = "nav-tab nav-tab-selected" href="index.html">Inicio</a> </li>
-          <li> <a class = "nav-tab" href="map.html">Mapa</a> </li>
+          <li> <a class = "nav-tab" href="index.html">Inicio</a> </li>
+          <li> <a class = "nav-tab nav-tab-selected" href="map.html">Mapa</a> </li>
           <li> <a class = "nav-tab" href="location.html">Lugar</a> </li>
           <li> <a class = "nav-tab" href="characters.html">Personajes</a> </li>
           <li> <a class = "nav-tab" href="traditions.html">Tradiciones</a> </li>
@@ -42,14 +42,25 @@
 
     <main><!--Contenido de la pestaña seleccionada en el menu-->
       <div class="text">
-        Minas Tirith es la capital del reino de Gondor dentro del universo de fantasia del aclamado
-        autor británico J.R.R. Tolkien. Es una ciudad fortaleza que reposa sobre una montaña lo
-        cual la convierte en la fortaleza perfecta para resistir un largo asedio.<br>
+        A continuación se muestra un mapa de las tierra media, resaltando ubicaciones importantes en las inmediaciones de Minas Tirith.
+        <br>
       </div>
       <br>
-      <img src="images/index.jpg" alt="Minas Tirith" class="in-text-image">
+      <!-- El siguiente svg es de mi autoría, se diseño usando la imagen middle_earth_map.jpg y los iconos que están en la carpeta icons.
+      Se utilizo el programa online LucidChart, allí se exporto la imagen resultante en formato svg, y posteriormente se añadieron clases y ids a cada
+      icono junto a su respectiva caja de color, para poder ser utilizados desde javascript.
+      Estas modificaciones se realizaron entre las lineas 4 y 28 del archivo middle_earth_map.svg, el cual se encuentra en la carpeta images,
+      los únicos cambios es la adición de clases y ids a cada etiqueta "path". De esta manera se evita tener que crear y ubicar una etiqueta para cada
+      icono, de forma manual.-->
+      <object type="image/svg+xml" data="./interactive_map.svg" class="interactive-map" id="interactive-map"></object>
+
+      <div class="map-container">
+
+      </div>
+
       <br>
     </main>
+
 
 
     <footer><!--Pie de pagina con lo datos del autor-->
@@ -59,5 +70,7 @@
       </div>
     </footer>
   </div>
+  <!-- Enlace a código javascript -->
+  <script src="map.js"></script>
 </body>
 </html>
