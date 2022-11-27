@@ -1,11 +1,11 @@
 /* Carga de tipografía .ttf alusiva a Señor de los anillos con licencia de uso personal gratuito */
 @font-face{
-    font-family: LoTRFont; 
+    font-family: LoTRFont;
     src: url('aniron-font/Aniron-7BaP.ttf');
 }
-@font-face{ 
-    font-family: LoTRFont; 
-    font-weight: bold; 
+@font-face{
+    font-family: LoTRFont;
+    font-weight: bold;
     src: url('aniron-font/AnironBold-mL9P.ttf');
 }
 
@@ -48,7 +48,7 @@ header{
     min-height: 25%;
     top:0;
     position:fixed;
-    
+
     margin: 0;
     border: 0; 
     padding: 1em 5em;
@@ -65,7 +65,7 @@ header{
     background-repeat: no-repeat;
 }
 /* Esconder los elementos exclusivos para la version de smartphone. */
-.hamburger, .hamburger-menu, .toggle-hamburger, .sm_title{ 
+.hamburger, .hamburger-menu, .toggle-hamburger, .sm_title{
     display: none
 }
 /* Estilo del titulo de la pagina. */
@@ -159,7 +159,7 @@ main{
     max-height: 60%;
     min-height: 60%;
     margin: 0;
-    border: 0; 
+    border: 0;
     padding: 3em 5em;
     top: 25%;
     bottom: 15%;
@@ -243,7 +243,7 @@ footer{
     max-height: 15%;
     min-height: 15%;
     margin: 0;
-    border: 1em; 
+    border: 1em;
     padding: 0.8em 5em;
 
     position:fixed;
@@ -255,7 +255,7 @@ footer{
     background-image: url('images/title.jpg');
     background-blend-mode: multiply;
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
 /* Estilo del texto contenido en el pie de pagina. */
 footer > div{
@@ -280,7 +280,7 @@ footer > div{
     /*Esconder el titulo y la linea separadora*/
     .title{
         display: none;
-    }    
+    }
     header > hr{
         display: none;
     }
@@ -295,7 +295,7 @@ footer > div{
         max-height: 72%;
     }
     video{
-        width:50%; 
+        width:50%;
         height: auto;
     }
 }
@@ -333,14 +333,14 @@ footer > div{
         max-height: 10%;
         min-height: 10%;
         top: 90%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     /*Esconder la barra de navegación*/
     .nav-menu{
         display: none;
     }
 
-    /* Ajustar los nuevos elementos de la cabecera. */ 
+    /* Ajustar los nuevos elementos de la cabecera. */
     header{
         display: flex;
         align-items: auto;
@@ -348,7 +348,7 @@ footer > div{
 
     }
 
-    /* Mostrar el menu desplegable. */ 
+    /* Mostrar el menu desplegable. */
     .hamburger{
         display: block;
     }
@@ -368,10 +368,9 @@ footer > div{
         max-width: 50%;
         top: 0;
         overflow-y: hidden;
-        
         text-align: center;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         color: rgb(255, 242, 0);
     }
 
@@ -391,15 +390,16 @@ footer > div{
     .nav-menu{
         margin: 0;
         padding: 0.5em;
+        padding-top: 3em;
         height: 80%;
-        
+
         align-items: center;
         background-color: rgba(4, 4, 159, 0.671);
         background-image: url('images/title.jpg');
         background-blend-mode: multiply;
         background-size: cover;
         background-repeat: no-repeat;
-        
+
         list-style-type: none;
         align-items: center;
         justify-content: start;
