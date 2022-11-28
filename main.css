@@ -249,7 +249,6 @@ th {
   width: 90%;
   border: 10px;
   border-radius: 10px;
-
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -263,17 +262,16 @@ th {
   background-color: rgba(41, 55, 110, 0.712);
   border-radius: 10px;
   padding: 20px;
-
   /* Esconder la caja de descripción de forma predeterminada */
   display: none;
 }
 
 /*  Estilo para la imagen dentro de la caja de descripción de cada item del mapa interactivo */
 .interactive_map_image {
-  width: 40%;
+  width: 50%;
+  height: 50%;
   border: 10px;
   border-radius: 10px;
-
   /*Centrado de la imagen*/
   display: block;
   margin-left: auto;
@@ -473,4 +471,22 @@ footer > div{
     transition: 1s;
   }
 
+  /* Ajustes responsivos para la caja de descripción del mapa interactivo */
+  .interactive-map-descriptor {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: justify;
+  }
+
+  /*  Incremento del tamaño de la imagen */
+  .interactive_map_image {
+    width: 100%;
+    margin-bottom: 2rem;
+    float: none;
+  }
+
+  /* Modificar la alineación de los elementos */
+  .clearfix::after {
+    display: block;
+  }
 }
