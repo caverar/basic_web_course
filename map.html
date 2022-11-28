@@ -42,7 +42,8 @@
 
     <main><!--Contenido de la pestaña seleccionada en el menu-->
       <div class="text">
-        A continuación se muestra un mapa de las tierra media, resaltando ubicaciones importantes en las inmediaciones de Minas Tirith.
+        A continuación se muestra un mapa de las tierra media, resaltando ubicaciones importantes en las inmediaciones de Minas Tirith. Puede hacer clic en 
+        cada uno de los marcadores para obtener información sobre el lugar.
         <br>
       </div>
       <br>
@@ -53,14 +54,14 @@
       los únicos cambios es la adición de clases y ids a cada etiqueta "path". De esta manera se evita tener que crear y ubicar una etiqueta para cada
       icono, de forma manual.-->
       <object type="image/svg+xml" data="./interactive_map.svg" class="interactive-map" id="interactive-map"></object>
-
-      <div class="map-container">
-
+      <br>
+      <div class="interactive-map-descriptor clearfix" id="description-box">
+        <image src="./images/minas-tirith.jpg" class="interactive_map_image" id="description-image"></image>
+        Minas Tirith. Ciudadela de los hombres de Gondor.
       </div>
 
       <br>
     </main>
-
 
 
     <footer><!--Pie de pagina con lo datos del autor-->
@@ -70,6 +71,7 @@
       </div>
     </footer>
   </div>
+
   <!-- Enlace a código javascript -->
   <script src="map.js"></script>
 </body>
